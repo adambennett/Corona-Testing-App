@@ -1,0 +1,21 @@
+{
+  "name": "corona-testing-application",
+  "version": "1.0.0",
+  "author": "Adam Bennett, Moe Aydin",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start-web-prod": "npm run start-prod --prefix corona-testing-front",
+    "start-web-dev": "npm run start --prefix corona-testing-front",
+    "start-api-dev": "npm run start:prod --prefix corona-testing-server",
+    "start-api-prod": "npm run start:dev --prefix corona-testing-server",
+    "start-api-debug": "npm run start:debug --prefix corona-testing-server",
+    "application-start-dev": "npm run p \"npm run start-web-dev\" \"npm run start-api-dev\"",
+    "application-start-prod": "npm run build --prefix corona-testing-front & npm run p \"npm run start-web-prod\" \"npm run start-api-prod\"",
+    "browser-check": "npm run browsers --prefix corona-testing-front",
+    "p": "parallelshell"
+  },
+  "dependencies": {
+    "parallelshell": "file:parallelshell"
+  }
+}
