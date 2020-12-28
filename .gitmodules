@@ -1,0 +1,6 @@
+[submodule "corona-testing-front"]
+	path = corona-testing-front
+	url = https://github.com/adambennett/corona-testing-front.git
+[submodule "corona-testing-server"]
+	path = corona-testing-server
+	url = https://github.com/adambennett/corona-testing-server.git
